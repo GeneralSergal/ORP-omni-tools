@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Docs/banner.png" alt="ORP Δ / OmniTools Banner" width="100%">
+  <img src="banner.png" alt="ORP Δ / OmniTools Banner" width="100%">
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/ORP-Δ-blueviolet" alt="ORP Version">
