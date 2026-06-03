@@ -8,10 +8,10 @@
 
 This document defines the strict boundaries, data flow vectors, and authority constraints between the interconnected components of the ecosystem:
 
-* **ORP Spec Repository** ([`ORP`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP%5D(https://github.com/GeneralSergal/ORP))) — *The Governance Core*
-* **ORP Execution Repository** ([`ORP-Reference-kit`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-Reference-kit%5D(https://github.com/GeneralSergal/ORP-Reference-kit))) — *The Validation Harness*
-* **ORP VRChat OSC Runtime** ([`ORP-VRC-OSC`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-VRC-OSC%5D(https://github.com/GeneralSergal/ORP-VRC-OSC))) — *The Spatial Telemetry Node*
-* **ORP OmniTools Fork** ([`ORP-omni-tools`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-omni-tools%5D(https://github.com/GeneralSergal/ORP-omni-tools))) — *The Client-Side Utility Sandbox*
+* **ORP Spec Repository** ([`ORP`](https://github.com/GeneralSergal/ORP%5D(https://github.com/GeneralSergal/ORP))) — *The Governance Core*
+* **ORP Execution Repository** ([`ORP-Reference-kit`](https://github.com/GeneralSergal/ORP-Reference-kit%5D(https://github.com/GeneralSergal/ORP-Reference-kit))) — *The Validation Harness*
+* **ORP VRChat OSC Runtime** ([`ORP-VRC-OSC`](https://github.com/GeneralSergal/ORP-VRC-OSC%5D(https://github.com/GeneralSergal/ORP-VRC-OSC))) — *The Spatial Telemetry Node*
+* **ORP OmniTools Fork** ([`ORP-omni-tools`](https://github.com/GeneralSergal/ORP-omni-tools%5D(https://github.com/GeneralSergal/ORP-omni-tools))) — *The Client-Side Utility Sandbox*
 
 This bridge prevents implicit architectural coupling, preventing governance specification, compilation runtime implementation, client-side UI parsing, and live spatial tracking behaviors from silently corrupting or modifying one another.
 
@@ -31,7 +31,7 @@ This bridge prevents implicit architectural coupling, preventing governance spec
 
 ```
 
-### L3 — SPECIFICATION ([`ORP`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP%5D(https://github.com/GeneralSergal/ORP)))
+### L3 — SPECIFICATION ([`ORP`](https://github.com/GeneralSergal/ORP%5D(https://github.com/GeneralSergal/ORP)))
 
 * Defines core system invariants, epistemic governance rules, and conceptual state machine structures.
 * Defines mathematical drift parameters ($\sigma^2$ limits) and the 5-state System Health Status (SHS).
@@ -40,7 +40,7 @@ This bridge prevents implicit architectural coupling, preventing governance spec
 
 ---
 
-### L2 — EXECUTION ([`ORP-Reference-kit`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-Reference-kit%5D(https://github.com/GeneralSergal/ORP-Reference-kit)))
+### L2 — EXECUTION ([`ORP-Reference-kit`](https://github.com/GeneralSergal/ORP-Reference-kit%5D(https://github.com/GeneralSergal/ORP-Reference-kit)))
 
 * Implements deterministic, reference-level runtime logic of the core spec equations.
 * Owns the central execution pipeline architecture and the Compliance Test Suite (CTS) harness.
@@ -48,7 +48,7 @@ This bridge prevents implicit architectural coupling, preventing governance spec
 
 ---
 
-### L1 — RUNTIME / DEPLOYMENT ([`ORP-VRC-OSC`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-VRC-OSC%5D(https://github.com/GeneralSergal/ORP-VRC-OSC)))
+### L1 — RUNTIME / DEPLOYMENT ([`ORP-VRC-OSC`](https://github.com/GeneralSergal/ORP-VRC-OSC%5D(https://github.com/GeneralSergal/ORP-VRC-OSC)))
 
 * Handles live deployment of ORP governance tracking in spatial virtual environments via Open Sound Control (OSC).
 * Consumes the L2 reference kit as an immutable execution contract to transform network events into formal session telemetry.
@@ -56,7 +56,7 @@ This bridge prevents implicit architectural coupling, preventing governance spec
 
 ---
 
-### L1 — UTILITY FRAMEWORK ([`ORP-omni-tools`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-omni-tools%5D(https://github.com/GeneralSergal/ORP-omni-tools)))
+### L1 — UTILITY FRAMEWORK ([`ORP-omni-tools`](https://github.com/GeneralSergal/ORP-omni-tools%5D(https://github.com/GeneralSergal/ORP-omni-tools)))
 
 * Provides the localized, zero-trust web application sandbox for manipulating, editor-processing, and compiling local media files, code tokens, and structural containers.
 * Responsible for executing client-side image-to-container transpilations (e.g., standard PNG to bit-exact WebP structures featuring `orpd` custom RIFF metadata injection blocks).
@@ -69,7 +69,7 @@ This bridge prevents implicit architectural coupling, preventing governance spec
 
 The Compliance Test Suite (CTS):
 
-* Is defined, maintained, and verified within [`ORP-Reference-kit`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-Reference-kit%5D(https://github.com/GeneralSergal/ORP-Reference-kit)) **ONLY**.
+* Is defined, maintained, and verified within [`ORP-Reference-kit`](https://github.com/GeneralSergal/ORP-Reference-kit%5D(https://github.com/GeneralSergal/ORP-Reference-kit)) **ONLY**.
 * Is a functional validation engine, not an ontological truth source.
 * CTS failures outside of the reference kit—whether triggered via spatial script logs or client-side web exceptions—indicate **Implementation Drift** or **Test Staleness**, never specification invalidity.
 
@@ -79,11 +79,11 @@ The Compliance Test Suite (CTS):
 
 Any structural modification or protocol evolution must cascade sequentially through the repository pipeline:
 
-1. **Spec Core Mutation:** Modification is committed to the [`ORP`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP%5D(https://github.com/GeneralSergal/ORP)) repository.
+1. **Spec Core Mutation:** Modification is committed to the [`ORP`](https://github.com/GeneralSergal/ORP%5D(https://github.com/GeneralSergal/ORP)) repository.
 2. **Review Step:** Manual translation, parameter mapping, and mathematical validation.
-3. **Reference Realignment:** The engine is updated in [`ORP-Reference-kit`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-Reference-kit%5D(https://github.com/GeneralSergal/ORP-Reference-kit)).
+3. **Reference Realignment:** The engine is updated in [`ORP-Reference-kit`](https://github.com/GeneralSergal/ORP-Reference-kit%5D(https://github.com/GeneralSergal/ORP-Reference-kit)).
 4. **Harness Synchronization:** The CTS logic is refactored *only* if behavioral contracts are modified.
-5. **Downstream Deployment Updates:** Runtime tracking rules are updated in [`ORP-VRC-OSC`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-VRC-OSC%5D(https://github.com/GeneralSergal/ORP-VRC-OSC)) and client utilities are synchronized in [`ORP-omni-tools`](https://www.google.com/search?q=%5Bhttps://github.com/GeneralSergal/ORP-omni-tools%5D(https://github.com/GeneralSergal/ORP-omni-tools)) concurrently.
+5. **Downstream Deployment Updates:** Runtime tracking rules are updated in [`ORP-VRC-OSC`](https://github.com/GeneralSergal/ORP-VRC-OSC%5D(https://github.com/GeneralSergal/ORP-VRC-OSC)) and client utilities are synchronized in [`ORP-omni-tools`](https://github.com/GeneralSergal/ORP-omni-tools%5D(https://github.com/GeneralSergal/ORP-omni-tools)) concurrently.
 6. **Trace Hardening:** Regen of golden traces or browser execution matrices occurs only after formal cross-repository validation checks pass.
 
 ---
