@@ -9,7 +9,7 @@
 This document defines the strict boundaries, data flow vectors, and authority constraints between the interconnected components of the ecosystem:
 
 * **ORP Spec Repository** ([`ORP`](https://github.com/GeneralSergal/ORP)) — *The Governance Core*
-* **ORP Execution Repository** ([`ORP-Reference-kit`](https://github.com/GeneralSergal/ORP-Reference-kit))) — *The Validation Harness*
+* **ORP Execution Repository** ([`ORP-Reference-kit`](https://github.com/GeneralSergal/ORP-Reference-kit)) — *The Validation Harness*
 * **ORP VRChat OSC Runtime** ([`ORP-VRC-OSC`](https://github.com/GeneralSergal/ORP-VRC-OSC)) — *The Spatial Telemetry Node*
 * **ORP OmniTools Fork** ([`ORP-omni-tools`](https://github.com/GeneralSergal/ORP-omni-tools)) — *The Client-Side Utility Sandbox*
 
@@ -31,7 +31,7 @@ This bridge prevents implicit architectural coupling, preventing governance spec
 
 ```
 
-### L3 — SPECIFICATION ([`ORP`](https://github.com/GeneralSergal/ORP)
+### L3 — SPECIFICATION ([`ORP`](https://github.com/GeneralSergal/ORP))
 
 * Defines core system invariants, epistemic governance rules, and conceptual state machine structures.
 * Defines mathematical drift parameters ($\sigma^2$ limits) and the 5-state System Health Status (SHS).
