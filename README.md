@@ -1,102 +1,95 @@
-<div align="center">
-        <img src="src/assets/logo.png" width="220" />
-        <br /><br />
-<a href="https://trendshift.io/repositories/13055" target="_blank"><img src="https://trendshift.io/api/badge/repositories/13055" alt="iib0011%2Fomni-tools | Trendshift" style="width: 200px;" width="200"/></a>
-   <br /><br />
-<a href="https://github.com/iib0011/omni-tools/releases">
-          <img src="https://img.shields.io/badge/version-0.6.0-blue?style=for-the-badge" />
-        </a>
-        <a href="https://hub.docker.com/r/iib0011/omni-tools">
-          <img src="https://img.shields.io/docker/pulls/iib0011/omni-tools?style=for-the-badge&logo=docker" />
-        </a>
-        <a href="https://github.com/iib0011">
-          <img src="https://img.shields.io/github/stars/iib0011/omni-tools?style=for-the-badge&logo=github" />
-        </a>
-        <a href="https://github.com/iib0011/omni-tools/blob/main/LICENSE">
-          <img src="https://img.shields.io/github/license/iib0011/omni-tools?style=for-the-badge" />
-        </a>
-        <a href="https://discord.gg/SDbbn3hT4b">
-          <img src="https://img.shields.io/discord/1342971141823664179?label=Discord&style=for-the-badge" />
-        </a>
-        <br /><br />
-</div>
+<p align="center">
+  <img src="Docs/banner.png" alt="ORP Δ / OmniTools Banner" width="100%">
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/ORP-Δ-blueviolet" alt="ORP Version">
+  <img src="https://img.shields.io/badge/OmniTools--Fork-v0.6.0-blue?style=flat" alt="OmniTools Version">
+  <img src="https://img.shields.io/badge/status-active-success" alt="Status">
+  <img src="https://img.shields.io/badge/SHS-5--State-green" alt="SHS Model">
+  <img src="https://img.shields.io/badge/LAS-L1→L6_Active-orange" alt="Layered Authority">
+  <img src="https://img.shields.io/badge/License-GPL--3.0-red" alt="GPL-3 License">
+</p>
 
-Welcome to OmniTools, a self-hosted web app offering a variety of online tools to simplify everyday tasks.
-Whether you are coding, manipulating images/videos, PDFs or crunching numbers, OmniTools has you covered. Please don't
-forget to
-star the repo to support us.
-Here is the [demo](https://omnitools.app) website.
+<h1 align="center">OmniTools Δ — An ORP‑Governed Epistemic Sandbox</h1>
 
-All files are processed entirely on the client side: nothing ever leaves your device.
-Plus, the Docker image is super lightweight at just 28MB, making it fast to deploy and easy to self-host.
+<p align="center">
+  A privacy-first, client-side utilities suite retrofitted into a hardened, zero-trust runtime network. <br>
+  <strong>Signal > Narrative · Recoverability > Completion · Provenance > Coherence</strong>
+</p>
 
-![img.png](docs-images/img.png)
+---
 
-## Table of Contents
+## **Mandatory Runtime Header Invariant**
+Every ORP‑aligned deployment or execution run of this codebase must enforce and emit the following state telemetry header *before* parsing telemetry or execution buffers:
 
-- [Features](#features)
-- [Self-host](#self-hostrun)
-- [Contribute](#contribute)
-- [Contact](#contact)
-- [License](#license)
+```text
+[SHS: GREEN | AMBER | RED]
+[DRIFT: 0.000 (NONE) | LOW | MODERATE | HIGH]
+[CRA: VALID | DEGRADED | UNKNOWN]
+[LAS: STATEFUL_CORE_ACTIVE | L3_GOVERNANCE | L6_OBSERVER]
 
-## Features
+```
 
-We strive to offer a variety of tools, including:
+This header is a **non‑negotiable invariant**. If a client environment or container execution cannot produce it, the operational boundary is considered **structurally corrupt**.
 
-### **Image/Video/Audio Tools**
+---
 
-- Image Resizer
-- Image Converter
-- Image Editor
-- Video Trimmer
-- Video Reverser
-- And more...
+## **1. Epistemic Architecture & The Sandbox**
 
-### **PDF Tools**
+OmniTools Δ is an open-source, client-side web application designed to simplify everyday tasks (manipulating images, code, vectors, and numbers) while maintaining absolute **epistemic isolation**.
 
-- PDF Splitter
-- PDF Merger
-- PDF Editor
-- And more...
+Following the **Layered Authority Stack (LAS)** specification, this instance treats all incoming files as unverified, high-entropy signals. The system enforces strict architectural boundaries:
 
-### **Text/List Tools**
+* **Zero-Trust Ingestion:** Every single file is processed **entirely client-side**. No telemetry, pixel arrays, or text buffers are ever shipped off to an external network registry.
+* **Semantic Resilience:** Image conversion pipelines (specifically PNG-to-WebP) are enhanced to support **Stealth RIFF Container Injection**. You can lock raw bytecode or structural data streams straight into the asset architecture silently without causing visual drift.
 
-- Case Converters
-- List Shuffler
-- Text Formatters
-- And more...
+---
 
-### **Date and Time Tools**
+## **2. Layered Authority Stack (LAS) Mapping**
 
-- Date Calculators
-- Time Zone Converters
-- And more...
+| Layer | Authority | Component Interface | Function | Status |
+| --- | --- | --- | --- | --- |
+| **L1** | Absolute | Native Browser Files / Crypto Inputs | Raw typed signals & canvas buffers (immutable) | Observational |
+| **L2** | High | TypeScript Math / Token Validators | Deterministic transformation & calculations | Trusted |
+| **L3** | Primary | Local OmniTools Logic & Code Engines | Governance core, asset compilers & processing invariants | Authoritative |
+| **L4-L6** | Observational | Client Runtime UI & Observer Matrices | High-observability state verification & user interfaces | Isolated |
 
-### **Math Tools**
+---
 
-- Generate Prime Numbers
-- Calculate voltage, current, or resistance
-- And more...
+## **3. Core Features Spec**
 
-### **Data Tools**
+OmniTools Δ provides an array of functional processors, running inside an incredibly lightweight 28MB Docker runtime core:
 
-- JSON Tools
-- CSV Tools
-- XML Tools
-- And more...
+### **Image/Video/Vector Core**
 
-Stay tuned as we continue to expand and improve our collection!
+* **WebP Stealth Encoder:** Native conversion of standard generation artifacts (PNG/JPG) into highly efficient WebP bitstreams featuring hidden `orpd` RIFF chunk injection.
+* **Vector Geometry Synthesis:** SVG manipulation engines that treat images as structural mathematical coordinate grids rather than flat pixels.
+* **Media Modulators:** Image Resizing, Image Editing, Video Trimming, and Video Reversers.
 
-## Self-host/Run
+### **Data & Math Processors**
 
-### Docker
+* **Semantic Transformers:** JSON Tools, CSV Parsers, and XML Formatting Engines.
+* **Deterministic Calculators:** Prime number generators, Voltage/Current Ohm’s law calculators, and timezone delta counters.
+
+### **Document & Text Isolation**
+
+* **PDF Splitters & Mergers:** Client-side object-stream modifications for document payloads.
+* **Text Formatters:** Case converters, list shufflers, and clean regex sanitizers.
+
+---
+
+## **4. Self-Host / Deployment**
+
+The tool deployment requires negligible overhead, allowing you to run your own localized instance securely on your own hardware nodes or personal domains.
+
+### **Docker CLI**
 
 ```bash
 docker run -d --name omni-tools --restart unless-stopped -p 8080:80 iib0011/omni-tools:latest
+
 ```
 
-### Docker Compose
+### **Docker Compose (`docker-compose.yml`)**
 
 ```yaml
 services:
@@ -109,82 +102,65 @@ services:
 
 ```
 
-## Contribute
+---
 
-This is a React Project with Typescript Material UI. We use icons from [Iconify](https://icon-sets.iconify.design)
+## **5. Repository Development Setup**
 
-### Project setup
+This is a React framework compiled using TypeScript and Material UI. Icons are pulled natively via Iconify.
+
+### **Project Initialization**
 
 ```bash
-git clone https://github.com/iib0011/omni-tools.git
+git clone [https://github.com/GeneralSergal/ORP.git](https://github.com/GeneralSergal/ORP.git)
 cd omni-tools
 npm i
 npm run dev
+
 ```
 
-### Create a new tool
+### **Scaffolding a New Module / Feature Component**
 
 ```bash
-npm run script:create:tool my-tool-name folder1 # npm run script:create:tool split pdf
+# General tool compilation script
+npm run script:create:tool my-tool-name folder1
+
+# Example: Injecting a custom PNG compressor
+npm run script:create:tool compress image/png
+
 ```
 
-For tools located under multiple nested directories, use:
+*(Note: Use `folder1\folder2` backslashes if operating on Windows local terminals).*
+
+### **Verification & Testing Suites**
 
 ```bash
-npm run script:create:tool my-tool-name folder1/folder2 # npm run script:create:tool compress image/png
+npm run test          # Execute integration tests
+npm run test:e2e      # Execute end-to-end framework testing
+
 ```
 
-Use `folder1\folder2` on Windows.
+---
 
-### Run tests
+## **6. Compliance & Structural Requirements**
 
-```bash
-npm run test
+To prevent repository corruption and remain aligned with the ORP Δ spec:
+
+1. **Browser Sovereignty:** No feature component may invoke an external API request that transmits raw file contents away from the browser window.
+2. **Deterministic Compilation:** All custom modules added to this fork must maintain strict TypeScript typing boundaries.
+3. **Drift Threshold Enforcement:** Any operations processing data arrays that exceed acceptable variance limits ($\sigma^2 \ge 0.15$) must trigger an immediate processing halt to defend the runtime window against memory drift.
+
+---
+
+## **7. License & Provenance**
+
+```text
+[PROVENANCE CERTIFICATION MATRIX]
+ORIGINAL CORE AUTHOR: Ibrahima Gaye Coulibaly (c) 2024
+UPSTREAM ARCHITECTURE: MIT License
+FORK MODIFICATIONS & EXTENSIONS: GNU General Public License v3.0 (GPL-3.0)
+
 ```
 
-- For e2e tests
+This project is a fork of `omni-tools`. In accordance with the terms of the original permissive license, the foundational core framework remains attributed to the upstream author under the **MIT License**.
 
-```bash
-npm run test:e2e
-```
-
-### i18n (Translations)
-The translation files are [here](public/locales). Only edit these if you are a developer. For non developers, use [Locize](https://www.locize.app/register?invitation=YOIH0Dyz3KHh3uQFCGYe9v1QOUoq8W5ySgmlwjX9cSypeJmt8F40brDtVbXb71fK).
-
-<img src="https://api.star-history.com/svg?repos=iib0011/omni-tools&type=Date"/>
-
-## 🤝 Looking to contribute?
-
-We welcome contributions! You can help by:
-
-- Reporting bugs
-- Suggesting new features in GitHub issues or [here](https://tally.so/r/nrkkx2)
-- Translating in [Locize project](https://www.locize.app/register?invitation=YOIH0Dyz3KHh3uQFCGYe9v1QOUoq8W5ySgmlwjX9cSypeJmt8F40brDtVbXb71fK).
-- Improving documentation
-- Submitting pull requests
-
-
-You can also join our [Discord server](https://discord.gg/SDbbn3hT4b)
-## 🧡 Sponsors
-<div align="center">
-  <a href="https://www.locize.com/" target="_blank">
-    <img src="docs-images/locizeSponsor.svg" alt="Locize" width="200"/>
-  </a>
-</div>
-
-Thanks to [Locize](https://www.locize.com) for sponsoring OmniTools and supporting localization efforts.
-They make translation management simple and developer-friendly.
-
-## Contributors
-
-<a href="https://github.com/iib0011/omni-tools/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=iib0011/omni-tools" />
-</a>
-
-## Contact
-
-For any questions or suggestions, feel free to open an issue or contact me at:
-[ibracool99@gmail.com](mailto:ibracool99@gmail.com)
-
-## License
-This project is a fork of omni-tools. The original core framework is used under the terms of the MIT License (Copyright (c) 2024 Ibrahima Gaye Coulibaly). All modifications, extensions, and custom pipeline modules developed under this fork are licensed under the GNU General Public License v3.0.
+All custom pipeline features, cryptographic data containers, metadata injection routines, and stateful tracking modules written under this repository fork are protected, sealed, and published strictly under the **GNU General Public License v3.0**.
