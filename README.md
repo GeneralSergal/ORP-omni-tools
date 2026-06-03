@@ -187,5 +187,4 @@ For any questions or suggestions, feel free to open an issue or contact me at:
 [ibracool99@gmail.com](mailto:ibracool99@gmail.com)
 
 ## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is a fork of omni-tools. The original core framework is used under the terms of the MIT License (Copyright (c) 2024 Ibrahima Gaye Coulibaly). All modifications, extensions, and custom pipeline modules developed under this fork are licensed under the GNU General Public License v3.0.
