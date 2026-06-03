@@ -1,0 +1,47 @@
+name: Build & Deploy Tools to ORP Site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ORP-omni-tools
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Checkout ORP site repo
+        uses: actions/checkout@v4
+        with:
+          repository: GeneralSergal/ORP
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          path: orp-site
+
+      - name: Copy build into public/tools/ subfolder
+        run: |
+          rm -rf ORP/public/tools
+          mkdir -p ORP/pulic/tools
+          cp -r dist/. ORP/public/tools/
+
+      - name: Commit and push to ORP repo
+        working-directory: orp-site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tools/
+          git diff --staged --quiet || git commit -m "chore: deploy omni-tools build [skip ci]"
+          git push
